@@ -43,7 +43,7 @@ Welcome to API Visualizer, a Vue.js project built with Pinia and Tailwind CSS. T
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/pushpak-23/Vue_Filter.git
+   git clone https://github.com/pushpak-23/API_Visulizer.git
 2. Install dependencies:
 
     ```bash
