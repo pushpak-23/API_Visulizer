@@ -1,4 +1,4 @@
-<template class="p-4 bg-gray-200">
+<template>
   <div>
     <InputUrl @submit="handleSubmit" />
     <DataTable :data="data" />
