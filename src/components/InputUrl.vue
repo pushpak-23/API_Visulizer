@@ -54,6 +54,7 @@ export default {
   components: {
     Navbar,
   },
+  emits: ["submit"],
   data() {
     return {
       apiUrl: "", // Initialize API URL

@@ -75,8 +75,7 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits("filter");
-
+const emit = defineEmits(["filter"]);
 const show = ref(false);
 const showSub = ref(false);
 const selectedColumn = ref(null);
@@ -106,10 +105,6 @@ const selectColumn = (column) => {
 };
 
 const applyFilters = () => {
-  console.log("Applying filters:", {
-    column: selectedColumn.value,
-    values: selectedFilters.value,
-  });
   emit("filter", {
     column: selectedColumn.value,
     values: selectedFilters.value,

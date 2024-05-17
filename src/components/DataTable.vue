@@ -45,6 +45,16 @@
                   class="w-20 h-20 rounded"
                 />
               </template>
+              <template v-else-if="Array.isArray(item[header])">
+                <ul>
+                  <li
+                    v-for="(subItem, subIndex) in item[header]"
+                    :key="subIndex"
+                  >
+                    {{ subItem }}
+                  </li>
+                </ul>
+              </template>
               <template v-else>
                 {{ item[header] }}
               </template>
@@ -123,7 +133,6 @@ export default {
     },
     handleFilter({ column, values }) {
       // If there are no values selected, remove the filter for this column
-      console.log("Received filter:", { column, values });
       if (values.length === 0) {
         this.$delete(this.filters, column);
       } else {
