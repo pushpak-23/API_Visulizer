@@ -73,9 +73,6 @@ export default {
         this.$emit("submit", this.apiUrl); // Emit submit event with API URL
       }
     },
-    updateApiUrl() {
-      // You can add additional validation or formatting logic here if needed
-    },
   },
 };
 </script>
